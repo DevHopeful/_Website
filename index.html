@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://kit.fontawesome.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;"> -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://kit.fontawesome.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; connect-src 'self' ws://127.0.0.1:3001 https://kit.fontawesome.com;"> -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://kit.fontawesome.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com https://kit.fontawesome.com; connect-src 'self' ws://127.0.0.1:3001 https://kit.fontawesome.com;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <script src="https://kit.fontawesome.com/523be6eb03.js" crossorigin="anonymous"></script>
+    <title>DevHopeful</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .left {
+            background: white;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .left img {
+            width: 300px;
+            height: auto;
+        }
+        .right {
+            background: #D03737;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            position: absolute;
+            top: 0;
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            text-align: center;
+            max-width: 400px;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            margin: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="assets/logo.jpg" alt="DevHopeful Logo">
+        </div>
+        <div class="right">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">OUR SERVICES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Welcome</h2>
+                <p>Since our opening, we have become masters of our craft. Our commitment to quality products, exceptional services, and incomparable customer care keep our community coming back again and again.</p>
+                <p>info@mysite.com<br>123-456-7890</p>
+                <div class="social-icons">
+                    <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

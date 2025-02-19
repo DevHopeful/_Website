@@ -1,0 +1,84 @@
+/* Reset default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full page layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left section (logo area) */
+.left {
+    background: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.left img {
+    width: 300px;
+    height: auto;
+}
+
+/* Right section (red background) */
+.right {
+    background: #D03737;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+/* Navigation bar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Centered content */
+.content {
+    text-align: center;
+    max-width: 400px;
+}
+
+/* Social icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 10px;
+    text-decoration: none;
+}
