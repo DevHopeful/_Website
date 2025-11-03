@@ -43,7 +43,7 @@ body {
 }
 
 .left img {
-    width: 300px;
+    width: 100%;
     height: auto;
     margin: 20px 0;
 }
