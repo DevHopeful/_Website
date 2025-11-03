@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevHopeful - Style Preview</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/523be6eb03.js" crossorigin="anonymous"></script>
+    <style>
+        /* Additional preview-specific styles */
+        .preview-section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .button {
+            background: #00d9ff;
+            color: #0a1628;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .button:hover {
+            background: #5ae5ff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 217, 255, 0.3);
+        }
+        
+        .button-secondary {
+            background: transparent;
+            color: #00d9ff;
+            border: 2px solid #00d9ff;
+        }
+        
+        .button-secondary:hover {
+            background: #00d9ff;
+            color: #0a1628;
+        }
+        
+        .columns {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .column {
+            flex: 1;
+            min-width: 250px;
+            background: rgba(30, 58, 95, 0.3);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #00a8cc;
+        }
+        
+        .column h3 {
+            color: #00d9ff;
+            margin-bottom: 15px;
+        }
+        
+        .column p {
+            color: #f0f4f8;
+            line-height: 1.6;
+        }
+        
+        .card {
+            background: rgba(30, 58, 95, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #00d9ff;
+        }
+        
+        .section-title {
+            color: #00d9ff;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .text-secondary {
+            color: #8b9db5;
+        }
+    </style>
+</head>
+<body style="background: #0a1628; color: #f0f4f8;">
+    
+    <!-- Header Section -->
+    <header style="text-align: center; padding: 50px 20px; background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 100%);">
+        <h1 style="color: #00d9ff; font-size: 3rem; margin-bottom: 10px;">DevHopeful Style Guide</h1>
+        <p class="text-secondary">Preview of your new website theme</p>
+    </header>
+
+    <!-- Navigation Preview -->
+    <nav class="navbar" style="position: relative;">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="preview-section">
+        
+        <!-- Buttons Section -->
+        <section style="text-align: center; margin: 40px 0;">
+            <h2 class="section-title">Buttons</h2>
+            <div>
+                <a href="#" class="button">Primary Button</a>
+                <a href="#" class="button button-secondary">Secondary Button</a>
+            </div>
+        </section>
+
+        <!-- Columns Section -->
+        <section style="margin: 60px 0;">
+            <h2 class="section-title">Three Column Layout</h2>
+            <div class="columns">
+                <div class="column">
+                    <i class="fas fa-code" style="font-size: 3rem; color: #00d9ff; margin-bottom: 15px;"></i>
+                    <h3>Development</h3>
+                    <p>Building modern web applications with cutting-edge technologies and best practices.</p>
+                </div>
+                <div class="column">
+                    <i class="fas fa-robot" style="font-size: 3rem; color: #00d9ff; margin-bottom: 15px;"></i>
+                    <h3>AI Integration</h3>
+                    <p>Leveraging artificial intelligence to enhance productivity and create innovative solutions.</p>
+                </div>
+                <div class="column">
+                    <i class="fas fa-graduation-cap" style="font-size: 3rem; color: #00d9ff; margin-bottom: 15px;"></i>
+                    <h3>Learning</h3>
+                    <p>Continuous education and skill development in the ever-evolving tech landscape.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card Section -->
+        <section style="margin: 60px 0;">
+            <h2 class="section-title">Content Cards</h2>
+            
+            <div class="card">
+                <h3 style="color: #00d9ff; margin-bottom: 10px;">Featured Article</h3>
+                <p>This is an example of a content card. The cyan accent on the left adds visual interest while maintaining the professional aesthetic of your brand.</p>
+            </div>
+
+            <div class="card">
+                <h3 style="color: #00d9ff; margin-bottom: 10px;">Latest Update</h3>
+                <p>Cards are perfect for blog posts, updates, or featured content. The subtle background and border create nice visual separation.</p>
+            </div>
+        </section>
+
+        <!-- Social Icons Section -->
+        <section style="text-align: center; margin: 60px 0;">
+            <h2 class="section-title">Social Media Links</h2>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section style="margin: 60px 0;">
+            <h2 class="section-title">Typography</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h1 style="color: #00d9ff;">Heading 1</h1>
+                <h2 style="color: #5ae5ff;">Heading 2</h2>
+                <h3 style="color: #8b9db5;">Heading 3</h3>
+                <p style="margin: 20px 0; line-height: 1.8;">
+                    This is regular paragraph text. It uses the off-white color (#f0f4f8) for excellent readability against the dark navy background. The line height is set for comfortable reading.
+                </p>
+                <p class="text-secondary" style="margin: 20px 0;">
+                    This is secondary text using the soft gray color (#8b9db5), perfect for less emphasized content or captions.
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 40px 20px; background: #0a1628; border-top: 1px solid #1e3a5f; margin-top: 60px;">
+        <p class="text-secondary">© 2024 DevHopeful. Becoming a Developer in the Age of AI.</p>
+    </footer>
+
+</body>
+</html>

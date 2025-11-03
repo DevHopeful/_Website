@@ -4,103 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    
-    <!-- This is the new CSP line (didn't work...)-->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://kit.fontawesome.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com https://kit.fontawesome.com https://ka-f.fontawesome.com; connect-src 'self' https://kit.fontawesome.com;"> -->
-    <!-- ^^^^ End of CSP line ^^^^ -->
-    
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <script src="https://kit.fontawesome.com/523be6eb03.js" crossorigin="anonymous"></script>
+    
     <title>DevHopeful</title>
+    
+    <!-- External Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico?" type="image/x-icon">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            display: flex;
-            height: 100vh;
-        }
-        .left {
-            background: #111;
-            color: rgba(229, 210, 129, 0.915);
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-        .left img {
-            width: 300px;
-            height: auto;
-        }
-        .right {
-            background: goldenrod;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: black;
-            padding: 20px;
-            position: relative;
-        }
-        .navbar {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-            position: absolute;
-            top: 0;
-        }
-        .navbar ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 20px;
-        }
-        .navbar ul li a {
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .content {
-            text-align: center;
-            max-width: 400px;
-        }
-        .social-icons {
-            margin-top: 20px;
-        }
-        .social-icons a {
-            color: black;
-            font-size: 24px;
-            margin: 10px;
-            text-decoration: none;
-        }
-        @media (max-width: 768px) {
-            .container {
-            flex-direction: column;
-            position: relative;
-            }
-             
-        }
-    </style>
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/523be6eb03.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
+        <!-- Left Section -->
         <div class="left">
             <h1>DevHopeful</h1>
             <br>
-            <img src="assets/logo.png" alt="DevHopeful Logo">
+            <img src="assets/DH_Blue_Logo_HighRes_NoBackground.png" alt="DevHopeful Logo">
             <br>
             <h3>Becoming a Dev in The Age of AI</h3>
         </div>
+        
+        <!-- Right Section -->
         <div class="right">
+            <!-- Navigation (currently commented out) -->
             <div class="navbar">
                 <!-- <ul>
                     <li><a href="#">HOME</a></li>
@@ -109,16 +39,30 @@
                     <li><a href="#">CONTACT</a></li>
                 </ul> -->
             </div>
+            
+            <!-- Main Content -->
             <div class="content">
                 <h2>Welcome</h2>
-                <p>So glad you've stopped by! I'd like you to come along on my journey!  We're going to see if it is still possible to become a professional software developer in this new Age of AI.  Many say AI will take all the devloper jobs. Some say it will make developers more productive.  Here at DevHopeful, we intend to chronicle the journey, start to finish, succeed or fail, of trying to become a new software developer in the modern age. Should it be done? Depends on who you ask. CAN it STILL be done? Subscribe to my YouTube channel @DevHopeful - Return to this site occasionally to see how it progresses... And we shall see!</p>
+                <p>So glad you've stopped by! I'd like you to come along on my journey! We're going to see if it is still possible to become a professional software developer in this new Age of AI. Many say AI will take all the developer jobs. Some say it will make developers more productive. Here at DevHopeful, we intend to chronicle the journey, start to finish, succeed or fail, of trying to become a new software developer in the modern age. Should it be done? Depends on who you ask. CAN it STILL be done? Subscribe to my YouTube channel @DevHopeful - Return to this site occasionally to see how it progresses... And we shall see!</p>
                 <br>
+                
+                <!-- Contact Info (currently commented out) -->
                 <!-- <p>info@mysite.com<br>123-456-7890</p> -->
+                
+                <!-- Social Media Icons -->
                 <div class="social-icons">
-                    <a href="https://www.youtube.com/@DevHopeful" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="https://x.com/DevHopeful" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                    <!-- <a href="https://instagram.com/DevHopeful" target="_blank"><i class="fa-brands fa-instagram"></i></a> -->
-                    <a href="https://github.com/DevHopeful" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.youtube.com/@DevHopeful" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://x.com/DevHopeful" target="_blank" aria-label="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <!-- <a href="https://instagram.com/DevHopeful" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a> -->
+                    <a href="https://github.com/DevHopeful" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
                 </div>
             </div>
         </div>
