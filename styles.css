@@ -1,4 +1,14 @@
 /* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #0a1628;
+}
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -7,12 +17,17 @@ body, h1, h2, h3, p, ul, li {
 
 body {
     font-family: Arial, sans-serif;
+    background: #0a1628;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /* Full page layout */
 .container {
     display: flex;
     height: 100vh;
+    min-height: 100vh;
+    width: 100%;
 }
 
 /* Left section - Deep Navy with geometric feel */
