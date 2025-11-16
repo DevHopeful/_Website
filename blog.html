@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    
+    <title>DevHopeful - Blog</title>
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico?" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/523be6eb03.js" crossorigin="anonymous"></script>
+    
+    <style>
+        /* Blog-specific styles */
+        .blog-container {
+            background: #0a1628;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .blog-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .blog-header h1 {
+            color: #00d9ff;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+        }
+        
+        .blog-header p {
+            color: #8b9db5;
+            font-size: 1.2rem;
+        }
+        
+        .blog-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+        
+        .blog-tile {
+            background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 100%);
+            border: 1px solid #00a8cc;
+            border-radius: 10px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            color: inherit;
+        }
+        
+        .blog-tile:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
+            border-color: #00d9ff;
+        }
+        
+        .blog-tile-date {
+            color: #8b9db5;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .blog-tile h2 {
+            color: #00d9ff;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .blog-tile-excerpt {
+            color: #f0f4f8;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .blog-tile-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        
+        .tag {
+            background: rgba(0, 217, 255, 0.2);
+            color: #00d9ff;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+        
+        .read-more {
+            color: #00d9ff;
+            font-weight: bold;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        
+        .back-home {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .back-home a {
+            color: #00d9ff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        
+        .back-home a:hover {
+            color: #5ae5ff;
+        }
+        
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .blog-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+        <!-- Blog Header -->
+        <div class="blog-header">
+            <h1>DevHopeful Blog</h1>
+            <p>Chronicles of becoming a developer in the Age of AI</p>
+        </div>
+        
+        <!-- Blog Posts Grid -->
+        <div class="blog-grid">
+            
+            <!-- Blog Post 1 -->
+            <a href=".\blogs\blog-post-sample.html" target="_blank" class="blog-tile">
+                <div class="blog-tile-date">November 16, 2025</div>
+                <h2>Starting My Developer Journey</h2>
+                <p class="blog-tile-excerpt">
+                    Today marks the beginning of an exciting adventure. I'm diving into the world of software development, 
+                    armed with curiosity and a laptop. The question everyone asks: "Why now, with AI everywhere?"
+                </p>
+                <div class="blog-tile-tags">
+                    <span class="tag">Journey</span>
+                    <span class="tag">Introduction</span>
+                    <span class="tag">AI</span>
+                </div>
+                <span class="read-more">Read more →</span>
+            </a>
+            
+            <!-- Blog Post 2 -->
+            <a href="blog-post-2.html" target="_blank" class="blog-tile">
+                <div class="blog-tile-date">November 10, 2025</div>
+                <h2>Learning HTML & CSS: Week One</h2>
+                <p class="blog-tile-excerpt">
+                    My first week diving into HTML and CSS has been eye-opening. Building this very website taught me 
+                    more about web fundamentals than I expected. Here's what I learned...
+                </p>
+                <div class="blog-tile-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Learning</span>
+                </div>
+                <span class="read-more">Read more →</span>
+            </a>
+            
+            <!-- Blog Post 3 -->
+            <a href="blog-post-3.html" target="_blank" class="blog-tile">
+                <div class="blog-tile-date">November 5, 2025</div>
+                <h2>Can AI Really Replace Developers?</h2>
+                <p class="blog-tile-excerpt">
+                    Everyone's talking about AI taking jobs. But what's the reality for aspiring developers? 
+                    I explored what AI can and can't do, and why human developers still matter.
+                </p>
+                <div class="blog-tile-tags">
+                    <span class="tag">AI</span>
+                    <span class="tag">Career</span>
+                    <span class="tag">Opinion</span>
+                </div>
+                <span class="read-more">Read more →</span>
+            </a>
+            
+            <!-- Blog Post 4 -->
+            <a href="blog-post-4.html" target="_blank" class="blog-tile">
+                <div class="blog-tile-date">October 28, 2025</div>
+                <h2>Choosing My First Programming Language</h2>
+                <p class="blog-tile-excerpt">
+                    Python? JavaScript? Java? The choice paralysis was real. Here's how I made my decision and 
+                    why I think it's the right starting point for my journey.
+                </p>
+                <div class="blog-tile-tags">
+                    <span class="tag">Programming</span>
+                    <span class="tag">Beginners</span>
+                </div>
+                <span class="read-more">Read more →</span>
+            </a>
+            
+        </div>
+        
+        <!-- Back to Home Link -->
+        <div class="back-home">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
